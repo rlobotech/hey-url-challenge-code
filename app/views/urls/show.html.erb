@@ -17,7 +17,7 @@
 <div class="row">
   <div class="col s12">
     <div class="card-panel">
-      <div id="total-clicks-chart"></div>
+      <div id="total-clicks-chart" class="chart"></div>
     </div>
   </div>
 </div>
@@ -25,13 +25,13 @@
 <div class="row">
   <div class="col s6">
     <div class="card-panel">
-      <div id="platforms-chart"></div>
+      <div id="platforms-chart" class="chart"></div>
     </div>
   </div>
 
   <div class="col s6">
     <div class="card-panel">
-      <div id="browsers-chart"></div>
+      <div id="browsers-chart" class="chart"></div>
     </div>
   </div>
 </div>
@@ -96,4 +96,8 @@
     drawBrowsersChart();
     drawPlatformsChart();
   }
+
+  window.onresize = function() {
+    drawCharts();
+  };
  </script>
