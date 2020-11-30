@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HeyUrl</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'raw', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body>
+    <nav id="header">
+      <div class="nav-wrapper">
+        <a href="<%= root_path %>" class="brand-logo">HeyURL!</a>
+      </div>
+    </nav>
+    <main role="main" class="container">
+      <%= yield %>
+    </main>
+    <div id="footer"></div>
+  </body>
+</html>

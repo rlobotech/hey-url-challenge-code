@@ -41,6 +41,7 @@ class UrlsController < ApplicationController
       ['Ubuntu', 17],
       ['Other', 7]
     ]
+    render layout: 'raw'
   end
 
   def visit

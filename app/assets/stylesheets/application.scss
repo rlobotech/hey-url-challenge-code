@@ -16,39 +16,3 @@
   width: 50%;
   height: 200px;
 }
-
-// div[alt^="example"]:before{
-//   content: "Example information";
-//   display: block;
-//   background: black;
-//   color: white;
-//   width: 100%;
-// }
-
-// @media screen and (max-width: 990px){
-//   .chart {
-//     width: 100%;
-//     display: inline;
-//   }
-// }
-//
-// Description
-//
-// HTML Semantic issues
-// There's a couple of semantic issue included into the html code:
-// 1. Inline tag including block tags (span -> div)
-// 2. Using div#footer instead of footer tag
-// 3. Using nav#header instead of header (also nav should be use only for navigation tags)
-//
-// CSS
-// Create a responsive page for chart block in url details page
-// 1. each of the chart block should cover the 100% of the page when the screen is lower than 990px
-//
-//
-// 2. Every div marked as example with the alt attribute (e.g. example-browser) should have a title with text "Example Information" before the element. details are described below:
-// 2.1. background should be black
-// 2.2. color should be white
-// 2.3. font-text 12px
-// 2.4. no html should be included into the show html for this case
-//
-// Note: be aware that this case should cover all the element when the alt value starts with the word "example" e.. example-platform and example-browser
